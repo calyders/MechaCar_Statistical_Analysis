@@ -17,3 +17,28 @@ The data summary shows that the R-squared value is 0.7149, meaning the model is 
 
 Just looking at the total summary, we can see that the variance is at roughly 62, falling under the maximum variance of 100. However, when we look at the lot summary, we see that the majority of this variance comes from lot 3. While lots 1 and 2 have variances of 0 and 7, lot 3 has a variance of 170. This means that lots 1 and 2 meet the maximum variance requirements, but lot 3 does not.
 
+## T-Tests on Suspension Coils
+![all lots](https://user-images.githubusercontent.com/115501756/219260791-992ec2a2-04bb-4198-9a2c-d58bf7c48b60.png)
+
+This first T-test provides the data from across all manufacturing lots and shows no statistical difference in the population mean.
+
+![lot 1](https://user-images.githubusercontent.com/115501756/219261326-08d68c78-d046-46a7-85f3-44c4e754c756.png)
+
+The T-test for lot 1 shares similar results with no statistical difference in the population mean.
+
+![lot 2](https://user-images.githubusercontent.com/115501756/219261862-660ca250-f4a1-4a5c-bca6-cff4853653b8.png)
+
+As was the case in the T-test for lot 1, the T-test for lot 2 shows no difference in the population mean.
+
+![lot 3](https://user-images.githubusercontent.com/115501756/219262439-376b25d7-2130-4536-9407-19abad275ba8.png)
+
+Lot 3, however, does have a statistical difference in its population mean. This lot should perhaps be looked at further.
+
+## Study Design: MechaCar vs Competition
+To stay ahead of other competitors, there are several other metrics to consider measuring. I would start with highway fuel efficiency and safety rating, as these are two very prevelent things that consumers will consider when buying a car.
+
+The null hypothesis here is that MechaCar's fuel efficiency and safety ratings are better than or the same as competitors. The alternative hypothesis is that MechaCar's ratings are worse.
+
+I think that some two sample t-tests would be best for finding this data.
+
+For this, we would need the highway fuel effiency data and the safety rating data for not only MechaCar but its competitors as well.
